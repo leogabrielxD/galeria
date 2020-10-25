@@ -1,0 +1,138 @@
+.contenedor-todas-portadas {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+
+.post-portadas {
+    text-align: center;
+    width: 100%;
+    padding: 10px 10px;
+    color: rgba(7, 55, 99, 1);
+    position: relative;
+}
+
+.contenedor-portada {
+    width: 200px;
+    height: 265px;
+    position: relative;
+    -webkit-perspective: 700;
+    margin: 5px 1px 0px 1px;
+}
+
+.ds {
+    width: 180px;
+    height: 180px;
+}
+.psp {
+    width: 160px;
+    height: 260px;
+}
+.portada-post {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.4s;
+    border: 1px solid rgba(7, 55, 99, 1);
+}
+
+.portada-post img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-portada:hover .portada-post {
+    transform: rotateY(180deg);
+}
+
+.lado {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.frente {}
+
+.atras {
+    background: #227093;
+    transform: rotateY(180deg);
+    text-align: center;
+
+}
+
+.atras h2 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    background: rgba(7, 55, 99, 1);
+    color: white;
+}
+
+.atras a {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    flex-direction: column;
+    background: #227093;
+    color: white;
+    font-style: italic;
+}
+
+.atras span {
+    position: relative;
+    border: 1px solid #fff;
+    padding: 5px;
+    width: 90%;
+    margin: 5%;
+    color: white;
+}
+
+.atras span:hover {
+    background: rgba(7, 55, 99, 1);
+
+}
+
+.descripcion {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+    font-size: 20PX;
+    color: white;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 940px) {
+    .contenedor-portada {
+        width: 140px;
+        height: 210px;
+        position: static;
+        -webkit-perspective: 700;
+        margin: 5px 0;
+    }
+
+    .post-portadas {
+        padding: 0;
+    }
+
+    .ds {
+        width: 180px;
+        height: 180px;
+    }
+    .psp {
+    width: 160px;
+    height: 260px;
+}
+
+
+
+
+}

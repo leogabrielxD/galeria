@@ -1,0 +1,396 @@
+@import url(estilos-menu.css);
+@import url(estilos-prueba.css);
+@import url(estilos-slides.css);
+@import url(swiper.min.css);
+@import url(estilos-post.css);
+@import url(estilos-portadas.css);
+
+body {
+    background-image: url(../images/background.jpg);
+    background-size: auto 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.hoja {
+    width: 96%;
+    position: relative;
+    left: 2%;
+    background: rgba(7, 55, 99, 0.8);
+    margin-top: 5px;
+}
+
+header {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+}
+
+.encabezado {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.encabezado img {
+    height: 100%;
+    width: 100%;
+}
+
+.principal {
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+.principal h3 {
+    display: block;
+    width: 100%;
+    background: #227093;
+    color: white;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+.principal h3 a {
+    color: white;
+    margin-left: 20px;
+    float: right;
+    padding-left: 15px;
+    border-left: 1px solid #fff;
+
+}
+
+.principal h3:first-child {
+    margin-bottom: 10px;
+}
+
+/* --------------INICIO DE BLOG ---------------- */
+.principal .blog {
+    overflow-y: auto;
+    width: 100%;
+}
+
+.principal .blog .entrada {
+    background: #227093;
+    border: 1px solid #0a2531;
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+}
+
+.principal .blog .entrada:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+
+}
+
+.principal .blog .entrada img {
+    width: 180px;
+    height: 100%;
+    margin: auto 0;
+    border: 1px solid white;
+}
+
+.principal .blog .cuadrado img{
+    width: 180px;
+}
+
+.principal .blog .entrada .texto-entrada {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 60%;
+    height: 100%;
+    margin: auto 0;
+}
+
+.principal .blog .entrada .texto-entrada h4 {
+    width: 100%;
+    padding: 5px;
+    color: white;
+    border-left: 5px solid #fff;
+}
+
+.principal .blog .entrada .texto-entrada p {
+    height: 100%;
+}
+
+.blog span {
+    padding: 20px;
+    margin: auto auto;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.blog span:hover {
+    background:  #227093;
+}
+
+/* ---------- Fin de entradas --------¿-- */
+
+aside {
+    width: 25%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    float: right;
+    position: sticky;
+    top: -320px;
+    display: block;
+
+}
+
+.bloque {
+    margin-bottom: 10px;
+    width: 100%;
+    z-index: 100;
+}
+
+.bloque p{
+    padding: 2px;
+    background: #fff;
+    color: #227093;
+    text-decoration: underline;
+}
+
+.gl-movil {
+    display: none;
+}
+
+.gl-movil h3 {
+    text-align: center;
+    color: white;
+    background: #073763;
+    padding: 5px;
+    font-size: 15px;
+}
+
+aside h3 {
+    text-align: center;
+    color: white;
+    background: #227093;
+    padding: 5px;
+    font-size: 15px;
+}
+
+aside img {
+    width: 100%;
+    display: block;
+}
+
+.uso-cookies {
+    width: 23%;
+    background: #fff;
+    bottom: 5px;
+    right: 2%;
+    position: fixed;
+    margin: 10px;
+    display: block;
+    border: 3px Solid #7a2020;
+    font-weight: bold;
+    color: #7a2020;
+}
+.uso-cookies h3{
+    background: #7a2020;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+}
+footer {
+    display: block;
+    position: static;
+    background: rgba(34, 112, 147, 1);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    height: 120px;
+    margin: 0 auto;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer ul {
+    display: flex;
+    margin: 0 auto;
+    position: static;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-fb {
+    background: #fff;
+}
+
+.fb-comments {
+    background: #fff;
+    display: block;
+}
+
+.frase {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    
+}
+.ir-arriba {
+        position: fixed;
+        display: none;
+        background: #1ce2e2;
+        bottom: 5px;
+        right: 2%;
+        z-index: 80;
+        cursor: pointer;
+        transform: rotate(-180deg);
+    }
+    .ir-arriba span{
+        display: block;
+        padding: 5px 5px;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+    
+#publicidad {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+}
+#publicidad1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background: none;
+    border: none;
+}
+
+@media screen and (max-width: 940px) {
+    body {
+        background-image: url(../images/background.jpg);
+        background-size: auto 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 82% 50%;
+    }
+
+
+    .principal {
+        width: 100%;
+    }
+
+    aside {
+        position: static;
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+
+    .principal .blog .entrada .texto-entrada h4 {
+        border-right: 5px solid #fff;
+    }
+
+    .principal .blog .entrada {
+        display: block;
+        text-align: center;
+    }
+    .principal .blog .entrada img {
+        width: 90%;
+    }
+
+    .principal .blog .entrada .texto-entrada {
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+    }
+
+    .blog span {
+        padding: 2px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    
+    footer ul {
+        flex-wrap: wrap;
+    }
+    
+    .uso-cookies {
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    left: 0;
+    right: inherit;
+    bottom: 0px;
+    position: fixed;
+    border: 3px Solid #7a2020;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: normal;
+}
+    .uso-cookies h3{
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .ir-arriba {
+        position: fixed;
+        display: none;
+        background: #1ce2e2;
+        bottom: 5px;
+        right: 2%;
+        z-index: 80;
+        cursor: pointer;
+        transform: rotate(-180deg);
+    }
+    .ir-arriba span{
+        display: block;
+        padding: 5px 5px;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+
+}

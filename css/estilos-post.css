@@ -1,0 +1,276 @@
+.post {
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, .7);
+    padding: 10px 0;
+    color: rgba(7, 55, 99, 1);
+}
+
+.post-encabezado {
+    display: flex;
+    margin: 0 5%;
+    font-weight: bold;
+}
+
+.post-encabezado img {
+    width: 200px;
+    height: 100%;
+}
+
+.post-encabezado p {
+    padding: 0px 10px;
+    margin: auto auto;
+    ;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.post h2 {
+    background: #227093;
+    margin: 10px 0;
+    color: white;
+    padding: 10px;
+    border-right: 15px solid rgba(0, 0, 0, .3);
+    border-left: 15px solid rgba(0, 0, 0, .3);
+    text-transform: uppercase;
+}
+
+.requicitos p {
+    left: 15%;
+    width: 70%;
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.instrucciones p {
+    left: 5%;
+    position: relative;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.capturas img {
+    width: 90%;
+    border: 4px ridge;
+    border-style: double
+}
+
+.peques {
+    width: 60%;
+    margin: 0 auto;
+}
+.video-instalacion {
+    position: relative;
+    padding-bottom: 47.58%;
+    /* 16/9 ratio */
+    padding-top: 30px;
+    /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.video-instalacion iframe,
+.video-instalacion object,
+.video-instalacion embed {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+}
+
+.video-instalacion img {
+    width: 100%;
+    
+}
+
+.unico-enlace {
+    display: none;
+    padding: 20px;
+}
+.unico-enlace img {
+    margin: 5px auto;
+    width: 50%;
+}
+.lista-links-instaladores{
+    margin: 10px;
+    display: none;
+}
+.lista-links-instaladores a {
+    display: block;
+    text-decoration: none;
+    color: #073763;
+    font-size: 23px;
+    background: none;
+    margin: 0 auto;
+    padding: .5em;
+    border: 3px solid #073763;
+    width: 75%;
+}
+
+.lista-links-instaladores a:hover {
+    background: #073763;
+    color: white;
+}
+.daemond-unico {
+    display: none;
+}
+
+.daemond-unico a {
+    display: inline-block;
+}
+
+.daemond-unico img {
+    width: auto;
+    margin: 5px auto;
+    width: 100%;
+}
+
+.daemond-unico a:last-child {
+    display: block;
+    text-decoration: none;
+    color: #073763;
+    font-size: 23px;
+    background: none;
+    margin: 0 150px;
+    padding: .5em;
+    border: 3px solid #073763;
+}
+
+.daemond-unico a:last-child:hover {
+    background: #073763;
+    color: white;
+}
+
+.daemond-lista {
+    position: relative;
+    margin: 10px;
+    display: none;
+}
+
+.daemond-lista a {
+    display: block;
+    text-decoration: none;
+    color: #073763;
+    font-size: 23px;
+    background: none;
+    margin: 0 auto;
+    padding: .5em;
+    border: 3px solid #073763;
+    width: 75%;
+}
+
+.daemond-lista a:hover {
+    background: #073763;
+    color: white;
+}
+
+.daemond-lista a:nth-last-child(3) {
+    border: none;
+    background: none;
+    margin: 0 37.5%;
+    width: 25%;
+}
+
+.daemond-lista a:nth-last-child(3) img {
+    display: inherit;
+    width: 100%;
+}
+
+.lista-link-portadas {
+    width: 60%;
+    margin: 0 auto;
+    display: none;
+}
+
+.lista-link-portadas img {
+    display: inherit;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.lista-link-portadas a:nth-last-child(4n+1) {
+    color: #073763;
+    font-size: 23px;
+    background: none;
+    padding: .5em;
+    border: 3px solid #073763;
+    display: block;
+}
+
+.lista-link-portadas a:nth-last-child(4n+1):hover {
+    background: #073763;
+    color: white;
+}
+.mostrar-enlaces {
+    padding: 20px;
+    font-size: 20px;
+}
+.mostrar-enlaces:hover{
+    border: 2px solid #000;
+}
+
+@media (max-width: 940px) {
+    .post-encabezado {
+        width: auto;
+        display: block;
+    }
+
+    .video-instalacion iframe,
+    .video-instalacion object,
+    .video-instalacion embed {
+        position: absolute;
+        top: 0;
+        left: 0.5%;
+        width: 99%;
+        height: 100%;
+    }
+    .unico-enlace img {
+    margin: 5px auto;
+    width: 100%;
+}
+
+    .lista-links-instaladores a {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .daemond-unico a:last-child {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .daemond-lista a {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .daemond-lista a:nth-last-child(3) {
+        border: none;
+        background: none;
+        margin: 0 25%;
+        width: 50%;
+    }
+
+    .lista-link-portadas {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .lista-link-portadas img {
+        width: 80%;
+    }
+    .img-prev {
+        width: 100%;
+    }
+    .peques {
+        width: 90%;
+    }
+    .post-encabezado img {
+    width: 200px;
+    height: 100%;
+}
+}
