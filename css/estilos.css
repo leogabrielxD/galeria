@@ -371,9 +371,9 @@ footer ul li a {
     
     
     .estante input:checked + label img {
-        width: 80%;
+        width: 90%;
         height: auto;
-        left: 10%;
+        left: 5%;
         top: 15%;
         box-shadow: 0px 400px 5px 5px rgba(0,0,0, 0.5), 0px -400px 5px 5px rgba(0,0,0, 0.5);
     }
