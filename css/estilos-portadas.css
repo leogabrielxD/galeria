@@ -16,13 +16,13 @@
 }
 
 .contenedor-portada {
-    width: 200px;
-    height: 265px;
+    width: 160px;
+    height: 220px;
     position: relative;
     -webkit-perspective: 700;
     margin: 5px 1px 0px 1px;
 }
-
+//*
 .ds {
     width: 180px;
     height: 180px;
@@ -31,6 +31,7 @@
     width: 160px;
     height: 260px;
 }
+*//
 .portada-post {
     width: 100%;
     height: 100%;
@@ -56,6 +57,14 @@
     position: absolute;
 }
 
+.grande {
+    width: 160px;
+    height: 220px;
+}
+.grande:hover {
+    width: 220px;
+    height: 350px
+}
 .frente {}
 
 .atras {

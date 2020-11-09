@@ -300,7 +300,103 @@ footer ul li a {
     border: none;
 }
 
+
+
+
+
+
+.estante {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.estante .caja {
+    display: none;
+    
+}
+.estante img {
+    width: 160px;
+    height: 220px;
+}
+
+.estante input:checked + label img {
+    width: 30%;
+    height: auto;
+    position: fixed;
+    left: 35%;
+    top: 5%;
+    border: 3px Solid #fff;
+    box-shadow: 50px 0px 5px 5px rgba(0,0,0, 0.5), -50px 0px 5px 5px rgba(0,0,0, 0.5);
+    
+}
+.estante .ds {
+    width: 200px;
+    height: auto;
+}
+
+.estante input:checked + label .ds {
+    width: 40%;
+    height: auto;
+    left: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 940px) {
+    
+    
+    .estante .ds {
+    width: 160px;
+    height: auto;
+}
+    
+    
+    .estante input:checked + label img {
+        width: 80%;
+        height: auto;
+        left: 10%;
+        box-shadow: 0px 200px 5px 5px rgba(0,0,0, 0.5), 0px -200px 5px 5px rgba(0,0,0, 0.5);
+    }
+    
+    .estante input:checked + label .ds {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 10%
+}
+    
+    .estante img {
+    width: 100px;
+    height: 135px;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
     body {
         background-image: url(../images/background.jpg);
         background-size: auto 100%;
