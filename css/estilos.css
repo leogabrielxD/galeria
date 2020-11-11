@@ -304,6 +304,7 @@ footer ul li a {
 
 
 
+/* ----------------------------------------------------------------------------- */
 
 .estante {
     display: flex;
@@ -344,25 +345,32 @@ footer ul li a {
     left: 30%;
 }
 
+.menu-movil {
+    display: none;
+}
+
+.menu-pc {
+    display: block;
+}
 
 
 
 
 
-
-
-
-
-
-
-
+/* ----------------------------------------------------------------------------- */
 
 
 
 
 
 @media screen and (max-width: 940px) {
+    .menu-pc {
+        display: none;
+    }
     
+    .menu-movil {
+        display: block;
+    }
     
     .estante .ds {
     width: 160px;

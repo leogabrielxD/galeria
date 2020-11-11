@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>(52) Galeria de juegos</title>
+    <title>(54) Galeria de juegos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
 	<meta name="propeller" content="c3ce9e8815417388051bc9a4eebee7f5">
@@ -32,31 +32,65 @@
             </div>
 
             <!-- ----------------INICIO DEL MENU---------------- -->
-
-            <nav>
+            
+            
+            <nav class="menu-pc">
                 <ul>
                     <li><a href="index.html"><span class="icon-home"></span>INICIO</a></li>
-                    <li><a href="https://pokefanleoretrogames.github.io/post/categorias/juegos-android.html"><span class="icon-android"></span>Android</a></li>
+                    <li><a href="#android"><span class="icon-android"></span>Android</a></li>
                     <li><a href="#pc"><span class="icon-desktop"></span>Juegos PC</a></li>
                     <li class="sub-menu">
                         <div><span class="icon-gamepad"></span>Play Station<span class="icon-down-open"></span></div>
                         <ul class="menu-hijo">
-                            <li><a href="https://pokefanleoretrogames.github.io/post/pokemon/pc.html">Play Station</a></li>
-                            <li><a href="https://pokefanleoretrogames.github.io/post/pokemon/android.html">Play Station 2</a></li>
-                            <li><a href="https://pokefanleoretrogames.github.io/post/pokemon/peliculas.html">Play Station 3</a></li>
+                            <li><a href="#play1">Play Station</a></li>
+                            <li><a href="#play2">Play Station 2</a></li>
+                            <li><a href="#play3">Play Station 3</a></li>
                         </ul>
                     </li>
                     <li class="sub-menu">
                         <div><span class="icon-gamepad"></span>Nintendo<span class="icon-down-open"></span></div>
                         <ul class="menu-hijo">
-                            <li><a href="https://pokefanleoretrogames.github.io/post/colecciones/crash-bandicoot.html">NES</a></li>
-                            <li><a href="https://pokefanleoretrogames.github.io/post/roms/nintendo-64.html">Nintendo 64</a></li>
-                            <li><a href="https://pokefanleoretrogames.github.io/post/roms/gamecube.html">Nintendo Gamecube</a></li>
-                            <li><a href="https://pokefanleoretrogames.github.io/post/roms/nintendo-wii.html">Nintendo Wii</a></li>
-                            <li><a href="https://pokefanleoretrogames.github.io/post/roms/nintendo-ds.html">Nintendo DS</a></li>
-                            <li><a href="https://pokefanleoretrogames.github.io/post/roms/gb-gbc-gba.html">Game boy GB/GBC</a></li>
+                            <li><a href="#nes">NES</a></li>
+                            <li><a href="#n64">Nintendo 64</a></li>
+                            <li><a href="#gamecube">Nintendo Gamecube</a></li>
+                            <li><a href="#wii">Nintendo Wii</a></li>
+                            <li><a href="nds">Nintendo DS</a></li>
+                            <li><a href="gb">Game boy GB/GBC</a></li>
                             <li><a href="#wiiu">Nintendo Wii U</a></li>
                             <li><a href="#3ds">Nintendo 3ds</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://pokefanleoretrogames.github.io/post/tutoriales.html"><span class="icon-play"></span>Tutoriales</a></li>
+                </ul>
+            </nav>
+            
+            <!-- --------------------------------------------------------------------------------- -->
+            
+            
+            <nav class="menu-movil">
+                <ul>
+                    <li><a href="index.html" onclick="cerrarmenu()"><span class="icon-home"></span>INICIO</a></li>
+                    <li><a href="#android" onclick="cerrarmenu()"><span class="icon-android"></span>Android</a></li>
+                    <li><a href="#pc" onclick="cerrarmenu()"><span class="icon-desktop"></span>Juegos PC</a></li>
+                    <li class="sub-menu">
+                        <div><span class="icon-gamepad"></span>Play Station<span class="icon-down-open"></span></div>
+                        <ul class="menu-hijo">
+                            <li><a href="#play1" onclick="cerrarmenu()">Play Station</a></li>
+                            <li><a href="#play2" onclick="cerrarmenu()">Play Station 2</a></li>
+                            <li><a href="#play3" onclick="cerrarmenu()">Play Station 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <div><span class="icon-gamepad"></span>Nintendo<span class="icon-down-open"></span></div>
+                        <ul class="menu-hijo">
+                            <li><a href="#nes" onclick="cerrarmenu()">NES</a></li>
+                            <li><a href="#n64" onclick="cerrarmenu()">Nintendo 64</a></li>
+                            <li><a href="#gamecube" onclick="cerrarmenu()">Nintendo Gamecube</a></li>
+                            <li><a href="#wii" onclick="cerrarmenu()">Nintendo Wii</a></li>
+                            <li><a href="nds" onclick="cerrarmenu()">Nintendo DS</a></li>
+                            <li><a href="gb" onclick="cerrarmenu()">Game boy GB/GBC</a></li>
+                            <li><a href="#wiiu" onclick="cerrarmenu()">Nintendo Wii U</a></li>
+                            <li><a href="#3ds" onclick="cerrarmenu()">Nintendo 3ds</a></li>
                         </ul>
                     </li>
                     <li><a href="https://pokefanleoretrogames.github.io/post/tutoriales.html"><span class="icon-play"></span>Tutoriales</a></li>
@@ -87,7 +121,7 @@
                     <div class="swiper-button-prev"></div>
                 </div> -->
         <main class="principal">
-           <h3>Juegos de play station 3</h3>
+           <h3 id="play3">Juegos de play station 3</h3>
             <div class="estante">
                 <input class="caja" type="checkbox" id="box1">
                 <label for="box1"><img src="images/ps3/atelier-escha-logyps3.jpg" alt="" title="Atelier Escha & Logy - ROL - jRPG"></label>
@@ -116,6 +150,9 @@
                 <input class="caja" type="checkbox" id="box9">
                 <label for="box9"><img src="images/ps3/The%20guided%20fate%20paradox.jpg" alt="" title="The Guided Fate Paradox - RPG -TACTICA - ANIME"></label>
                 
+                <input class="caja" type="checkbox" id="box53">
+                <label for="box53"><img src="images/ps3/PAC-MAN%20and%20the%20Ghostly%20Adventures%202.jpg" alt="" title="Pacman and the ghostly adventures - AVENTURA - PLATAFORMAS 3D"></label>
+                
             </div>
                
                 <!-- 
@@ -136,6 +173,9 @@
                 
                 <input class="caja" type="checkbox" id="box13">
                 <label for="box13"><img src="images/wiiu/super-mario-3d-world.jpg" alt="" title="Super Mario 3d World - PLATAFORMAS 3D"></label>
+                
+                <input class="caja" type="checkbox" id="box54">
+                <label for="box54"><img src="images/wiiu/legendzeldawindwaker.jpg" alt="" title="Zelda Wind Waker - AVENTURA MASMORRAS"></label>
             </div>
             
                 <!-- 
@@ -155,7 +195,7 @@
                 <label for="box16"><img src="images/3ds/attack_on_titan-humanity%20in%20chains.jpg" class="ds" alt="" title="Attack on Titan Humanity in Chains - AVENTURA"></label>
                 
                 <input class="caja" type="checkbox" id="box17">
-                <label for="box17"><img src="images/3ds/Binding%20Of%20isac%20Rebird.png" class="ds" alt="" title="Binding of isaac Rebird - MASMORRAS"></label>
+                <label for="box17"><img src="images/3ds/Binding%20Of%20isac%20Rebird.jpg" class="ds" alt="" title="Binding of isaac Rebird - MASMORRAS"></label>
                 
                 <input class="caja" type="checkbox" id="box18">
                 <label for="box18"><img src="images/3ds/bravely_Default.jpg" class="ds" alt="" title="Bravely Default - ROL -RPG"></label>

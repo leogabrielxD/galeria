@@ -18,6 +18,14 @@ function main() {
     });
 }
 
+function cerrarmenu() {
+    contador = 1;
+    $("nav").animate({
+        left:'-100%'
+    });
+}
+
+
 // MOSTRAMOS Y OCULTAMOS SUBMENUS
 
 $(".sub-menu").click(function () {
