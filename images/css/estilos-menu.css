@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.menu-bar {
+    display: none;
+
+}
+
+header {
+    width: 100%;
+    z-index: 100;
+}
+
+header nav {
+    background: var(--color-terciario);
+    display: inline-block;
+    width: 100%;
+    top: 0%;
+}
+
+header nav ul li span {
+    margin-right: 5px;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+header nav ul li:hover {
+    background: rgba(0, 0, 0, .2);
+
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 10px;
+}
+
+header nav ul li div {
+    display: block;
+    color: white;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+
+header nav ul span {
+    color: white;
+}
+
+header nav ul li .menu-hijo {
+    display: none;
+    background: var(--color-principal);
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+}
+
+header nav ul li:hover .menu-hijo {
+    display: block;
+}
+
+header nav ul li .menu-hijo li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header nav ul li .menu-hijo li a {
+    display: block;
+}
+
+header nav ul li .icon-down-open {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+
+/* ---------------ESTILOS EN MOVIL--------------- */
+
+
+@media screen and (max-width: 940px) {
+
+    .menu-bar {
+        position: fixed;
+        display: block;
+        background: var(--color-terciario);
+        top: 5px;
+        right: 2%;
+        z-index: 80;
+        cursor: pointer;
+        border: solid #fff;
+    }
+
+    .menu-bar .boton-menu {
+        display: block;
+        padding: 15px 10px;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-bar span {
+        float: right;
+        font-size: 25px;
+
+    }
+
+    header nav {
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        margin: 0;
+        right: 100%;
+        overflow: scroll;
+        top: 0;
+        background: var(--color-terciario);
+        z-index: 100;
+    }
+
+    header nav ul {
+        float: none;
+    }
+
+    header nav ul li {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 20px 10px;
+    }
+
+    header nav ul li div {
+        padding: 20px 10px;
+    }
+
+    header nav ul li .menu-hijo li a {
+        margin-left: 20px;
+    }
+
+    header nav ul li .icon-down-open {
+        float: right;
+    }
+
+    header nav ul li .menu-hijo {
+        position: relative;
+        width: 100%;
+    }
+
+    header nav ul li:hover .menu-hijo {
+        display: none;
+    }
+
+    header nav ul li .menu-hijo li {
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+    
+}

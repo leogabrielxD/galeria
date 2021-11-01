@@ -25,6 +25,19 @@ function cerrarmenu() {
     });
 }
 
+// SCRIPT DE CLICK EN IMAGEN
+
+$(".portada img").click(function(){
+    $(this).toggleClass("img-grande");
+});
+
+$(".a2 .psp").click(function(){
+    $(this).toggleClass("img-grande-psp");
+});
+$(".a2 .ds").click(function(){
+    $(this).toggleClass("img-grande-psp");
+});
+
 
 // MOSTRAMOS Y OCULTAMOS SUBMENUS
 
@@ -42,6 +55,18 @@ $(".menu-hijo").click(function (p) {
 $(".buscar-bar").click(function () {
     $(this).siblings(".gl-movil").slideToggle("fast");
 });
+// Ocultar estantes
+
+
+$(".bodega .titulo").click(function() {
+    $(this).siblings(".estante").slideToggle("fast");
+});
+
+$("h3").click(function(){
+   $(this).children("span").toggleClass("icon-down-open").toggleClass("icon-up-open-1"); 
+});
+
+
 
 // SCRIPTS DE SLIDE
 
@@ -90,7 +115,7 @@ $(document).ready(function(){
     
     $(window).scroll(function(){
         if( $(this).scrollTop() > 0){
-                $(".ir-arriba").slideDown(1000);
+                $(".ir-arriba").slideDown(300);
            } else {
                 $(".ir-arriba").slideUp(300);
            }

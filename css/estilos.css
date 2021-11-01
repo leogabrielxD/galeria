@@ -5,6 +5,7 @@
 @import url(estilos-post.css);
 @import url(estilos-portadas.css);
 
+
 body {
     background-image: url(../images/background.jpg);
     background-size: auto 100%;
@@ -12,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+
 
 .hoja {
     width: 96%;
@@ -59,6 +61,16 @@ header img {
     color: white;
     padding: 10px 10px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+.principal h3:hover {
+    background: #2c84ab;
+}
+
+.principal h3 span {
+    position: absolute;
+    right: 0;
+    padding: 0px 15px;
 }
 
 .principal h3 a {
@@ -102,6 +114,7 @@ header img {
     height: 100%;
     margin: auto 0;
     border: 1px solid white;
+    
 }
 
 .principal .blog .cuadrado img{
@@ -137,6 +150,7 @@ header img {
 .blog span:hover {
     background:  #227093;
 }
+
 
 /* ---------- Fin de entradas --------¿-- */
 
@@ -276,7 +290,7 @@ footer ul li a {
         text-decoration: none;
         width: 100%;
         height: 100%;
-        font-size: 20px;
+        font-size: 25px;
     }
     
 #publicidad {
@@ -320,8 +334,8 @@ footer ul li a {
     
 }
 .estante img {
-    width: 160px;
-    height: 220px;
+    width: 140px;
+    height: 200px;
 }
 
 .estante input:checked + label img {
@@ -335,7 +349,12 @@ footer ul li a {
     
 }
 .estante .ds {
-    width: 200px;
+    width: 140px;
+    height: auto;
+}
+
+.estante .psp {
+    width: 140px;
     height: auto;
 }
 
@@ -354,9 +373,30 @@ footer ul li a {
 }
 
 
+.estante .img-portada {
+    width: 160px;
+    height: 220px;
+}
 
+.estante .img-grande{
+    width: 30%;
+    height: auto;
+    position: fixed;
+    left: 35%;
+    top: 2%;
+    border: 3px Solid #fff;
+    box-shadow: 50px 0px 5px 5px rgba(0,0,0, 0.5), -50px 0px 5px 5px rgba(0,0,0, 0.5);
+}
 
-
+.estante .img-grande-psp {
+    width: 27%;
+    height: auto;
+    position: fixed;
+    left: 35%;
+    top: 2%;
+    border: 3px Solid #fff;
+    box-shadow: 50px 0px 5px 5px rgba(0,0,0, 0.5), -50px 0px 5px 5px rgba(0,0,0, 0.5);
+}
 /* ----------------------------------------------------------------------------- */
 
 
@@ -399,8 +439,21 @@ footer ul li a {
 }
     
     
+.estante .img-grande {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 15%;
+
+}
+ 
+.estante .img-grande-psp {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 15%;
     
-    
+}
     
     
     
@@ -499,3 +552,7 @@ footer ul li a {
     }
 
 }
+
+
+
+
