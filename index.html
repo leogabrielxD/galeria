@@ -1,73 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <title>Galeria de juegos</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
-	<meta name="propeller" content="c3ce9e8815417388051bc9a4eebee7f5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="js/jquery-3.4.1.js"></script>
-    <script async defer src="https://connect.facebook.net/es_LA/sdk.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/sticky-sidebar.js"></script>
-    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/fontello.css">
+    <title>Estanteria</title>
 </head>
-
 <body>
-    <!-- PLUGIN DE COMENTARIOS -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v5.0"></script>
-    <!-- fin de plugin de comentarios -->
+    
 
-    <div class="hoja">
+    <section class="hoja">
         <header>
-            <img src="images/header2.jpg" alt="">
-            <div class="encabezado">
-                <a href="index.html"><img src="images/header2.jpg" alt=""></a>
-            </div>
             <div class="menu-bar">
                 <span class="icon-menu boton-menu"></span>
             </div>
-
             <!-- ----------------INICIO DEL MENU---------------- -->
-            
-            
-            <nav class="menu-pc">
-                <ul>
-                    <li><a href="index.html"><span class="icon-home"></span>INICIO</a></li>
-                    <li><a href="#android"><span class="icon-android"></span>Android</a></li>
-                    <li><a href="#pc"><span class="icon-desktop"></span>Juegos PC</a></li>
-                    <li class="sub-menu">
-                        <div><span class="icon-gamepad"></span>Play Station<span class="icon-down-open"></span></div>
-                        <ul class="menu-hijo">
-                            <li><a href="#play1">Play Station</a></li>
-                            <li><a href="#play2">Play Station 2</a></li>
-                            <li><a href="#play3">Play Station 3</a></li>
-                            <li><a href="#psp">Play Station Portable</a></li>
-                        </ul>
-                    </li>
-                    <li class="sub-menu">
-                        <div><span class="icon-gamepad"></span>Nintendo<span class="icon-down-open"></span></div>
-                        <ul class="menu-hijo">
-                            <li><a href="#nes">NES</a></li>
-                            <li><a href="#n64">Nintendo 64</a></li>
-                            <li><a href="#gamecube">Nintendo Gamecube</a></li>
-                            <li><a href="#wii">Nintendo Wii</a></li>
-                            <li><a href="nds">Nintendo DS</a></li>
-                            <li><a href="gb">Game boy GB/GBC</a></li>
-                            <li><a href="#wiiu">Nintendo Wii U</a></li>
-                            <li><a href="#3ds">Nintendo 3ds</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://pokefanleoretrogames.github.io/post/tutoriales.html"><span class="icon-play"></span>Tutoriales</a></li>
-                </ul>
-            </nav>
-            
-            <!-- --------------------------------------------------------------------------------- -->
-            
-            
             <nav class="menu-movil">
                 <ul>
                     <li><a href="index.html" onclick="cerrarmenu()"><span class="icon-home"></span>INICIO</a></li>
@@ -89,8 +38,8 @@
                             <li><a href="#n64" onclick="cerrarmenu()">Nintendo 64</a></li>
                             <li><a href="#gamecube" onclick="cerrarmenu()">Nintendo Gamecube</a></li>
                             <li><a href="#wii" onclick="cerrarmenu()">Nintendo Wii</a></li>
-                            <li><a href="nds" onclick="cerrarmenu()">Nintendo DS</a></li>
-                            <li><a href="gb" onclick="cerrarmenu()">Game boy GB/GBC</a></li>
+                            <li><a href="#nds" onclick="cerrarmenu()">Nintendo DS</a></li>
+                            <li><a href="#gb" onclick="cerrarmenu()">Game boy GB/GBC</a></li>
                             <li><a href="#wiiu" onclick="cerrarmenu()">Nintendo Wii U</a></li>
                             <li><a href="#3ds" onclick="cerrarmenu()">Nintendo 3ds</a></li>
                         </ul>
@@ -101,540 +50,251 @@
             <!-- ----------------FIN DEL MENU---------------- -->
         </header>
 
-        
-        <!-- 
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/resident-evil-2-remake-descargar.html"><img src="https://i.imgur.com/V3TdPnG.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/android/bully-aniversary-edition-descargar.html"><img src="https://i.imgur.com/JTZw7f3.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/sword-art-online-fatal-bullet-descargar.html"><img src="https://i.imgur.com/AmOZOX7.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/senran-kagura-peach-beach-splash-descargar.html"><img src="https://i.ibb.co/NFsVTXM/senran.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/catherine-classics-descargar.html"><img src="https://i.imgur.com/0GEJFHu.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/gears-of-war-1-espanol-latino-full-pc-descargar.html"><img src="https://i.ibb.co/mqPdW1z/Gears-of-War-Portada.png" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/grand-theft-auto-san-andreas-descargar.html"><img src="https://i.ibb.co/wrVk5Sx/gtasa.jpg" alt="portada" border="0"></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/descargar-crysis.html"><img src="https://i.ibb.co/gFMrHLm/crssportada.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/senran-kagura-shinobi-versus-pc-full-descargar.html"><img src="https://i.ibb.co/v4hDWkx/senrankagurashinoviversus.jpg" alt=""></a></div>
-                        <div class="swiper-slide"><a href="https://pokefanleoretrogames.github.io/post/pc/descargar-borderlands.html"><img src="https://i.ibb.co/wp80292/Borderlands.jpg" alt="Borderlands" border="0"></a></div>
-                    </div>
-                    Add Pagination
-                    <div class="swiper-pagination"></div>
-                    Add Arrows
-                    <div class="swiper-button-next" style="padding: 10px;"></div>
-                    <div class="swiper-button-prev"></div>
-                </div> -->
-    <main class="principal">
-    
-    <!--
-    
-    <div class="bodega">
-        <h3 class="titulo" id="play">Juegos de Play Station<span class="icon-up-open-1"></span></h3>
-        <div class="estante">
-            
+        <div class="bodega">
+            <h3 id="play1">Juegos de Play Station <span class="icon-down open"></span></h3>  <!-- ---------------------------------------------------------------------- --> 
+            <div class="estante cuadro psx">
+                <img src="images/ps1/bash.png" title="Crash Bash - Party">
+                <img src="images/ps1/CTR.png" title="Crash Team Racing - Carreras">
+                <img src="images/ps1/Marvel.jpg" title="Marvel vs Capcom - PELEAS">
+                <img src="images/ps1/Pcw1.jpg" title="Pacman World- Aventura">
+                <img src="images/ps1/puzzle.jpg" title="Street Puzzle Fighter Turbo - Puzzle">
+                <img src="images/ps1/sh1boxart.png" title="Silent Hill - Terror">
+            </div>
         </div>
-    </div>
-    
-    -->
-    
+        
+        <div class="bodega">
+            <h3 id="play2">Juegos de Play Station 2<span class="icon-down-open"></span></h3>  <!-- ---------------------------------------------------------------------- --> 
+            <div class="estante ps2">
+                <img src="images/ps2/007rusia.jpg" title="007 From Russia With Love">
+                <img src="images/ps2/black.jpg" title="Black - DISPAROS">
+                <img src="images/ps2/crash-MOM.jpg"  title="Crash Mind Over Mutants - AVENTURA">
+                <img src="images/ps2/crash-TTR.jpg" title="Crash Tag Team Racing - CARRERAS">
+                <img src="images/ps2/defjamffny.jpg" title="Def Jam Fight For NY - PELEAS">
+                <img src="images/ps2/gta-SA.jpg" title="GTA San Andreas - ACCION">
+                <img src="images/ps2/hulk.jpg" title="Hulk - AVENTURA">
+                <img src="images/ps2/knd-videogame.jpg" title="KND Videogame - PLATAFORMAS">
+                <img src="images/ps2/metal-slug-antology.jpg" title="Metal Slug - DISPAROS">
+                <img src="images/ps2/pac-man-w2.jpg" title="Pac Man World 2 - AVENTURA">
+                <img src="images/ps2/Silent_Hill_2.jpg" title="Silent Hill 2 - TERROR">
+                <img src="images/ps2/state-of-emergency-2.jpg" title="State of Emergency 2 - DISPAROS">
+            </div>
+        </div>
 
-    
-    <div class="bodega">
-        <h3 class="titulo" id="play1">Juegos de Play Station<span class="icon-up-open-1"></span></h3>
-        <div class="estante">
-            <img src="images/ps1/bash.png" class="a1 ds" title="Crash Bash - Party"></div>
-            <img src="images/ps1/CTR.png" class="a1 ds" title="Crash Team Racing - Carreras"></div>
-            <img src="images/ps1/Marvel.jpg" class="a1 ds" title="Marvel vs Capcom - PELEAS"></div>
-            <img src="images/ps1/Pcw1.jpg" class="a1 ds" title="Pacman World- Aventura"></div>
-            <img src="images/ps1/puzzle.jpg" class="a1 ds" title="Street Puzzle Fighter Turbo - Puzzle"></div>
-            <img src="images/ps1/sh1boxart.png" class="a1 ds" title="Silent Hill - Terror"></div>
+        <div class="bodega">
+            <h3 id="play3">Juegos de Play Station 3 <span class="icon-down-open"></span></h3>      <!-- ---------------------------------------------------------------------- --> 
+            <div class="estante ps3">
+                <img src="images/ps3/atelier-escha-logyps3.jpg" title="Atelier Escha And Logy - JRPG">
+                <img src="images/ps3/Atelier_Rorona.jpg" alt="JRPG">
+                <img src="images/ps3/chavokart.jpg" title="El Chavo Kart - CARRERAS">
+                <img src="images/ps3/danteps3.gif" title="Dante´s Inferno - HACK n SLASH">
+                <img src="images/ps3/gowcollps3.jpg" title="God of War Collection - HACK n SLASH">
+                <img src="images/ps3/mikuProjectfps3.jpg" title="Hatsune Miku Project Diva F - RITMICO">
+                <img src="images/ps3/hatsune-miku-pdf2-ps3.jpg" title="Hatsune Miku Project Diva F2 -  RITMICO">
+                <img src="images/ps3/hulk.jpg" title="The Incredible Hulk - AVENTURA">
+                <img src="images/ps3/Odin_Sphere_Leifthrasir_BLUS3160.jpg" title="Odin Sphere - JRPG">
+                <img src="images/ps3/p5ps3.jpg" title="Persona 5 - JRPG">
+                <img src="images/ps3/scott.jpg" title="Scott Pilgrim vs the World - Beat em UP">
+                <img src="images/ps3/Shadow-Of-The-Colossus.jpg" title="Shadow of the Colossus - AVENTURA">
+                <img src="images/ps3/Shovel_knight_ps3.jpg" title="Shovel Knight - PLATAFORMAS">
+                <img src="images/ps3/simppsosnvg.jpg" title="The Simpsons the Videogame - AVENTURA">
+                <img src="images/ps3/Strider-PS3.jpg" title="Strider Hiryu - PLATAFORMAS">
+                <img src="images/ps3/The guided fate paradox.jpg" title="The Guided Fate Paradox - JRPG">
+                <img src="images/ps3/time-and-eternity.jpg" title="Time and Eternity - Masmorras">
+            </div>
         </div>
-    </div>
 
-    <div class="bodega">
-        <h3 class="titulo" id="play2">Juegos de Play Station 2<span class="icon-up-open-1"></span></h3>
-        <div class="estante">
-            <img src="images/ps2/007rusia.jpg" title="007 From Russia With Love"></div>
-            <img src="images/ps2/black.jpg" title="Black - DISPAROS"></div>
-            <img src="images/ps2/crash-MOM.jpg"  title="Crash Mind Over Mutants - AVENTURA"></div>
-            <img src="images/ps2/crash-TTR.jpg" title="Crash Tag Team Racing - CARRERAS"></div>
-            <img src="images/ps2/defjamffny.jpg" title="Def Jam Fight For NY - PELEAS"></div>
-            <img src="images/ps2/gta-SA.jpg" title="GTA San Andreas - ACCION"></div>
-            <img src="images/ps2/hulk.jpg" title="Hulk - AVENTURA"></div>
-            <img src="images/ps2/knd-videogame.jpg" title="KND Videogame - PLATAFORMAS"></div>
-            <img src="images/ps2/metal-slug-antology.jpg" title="Metal Slug - DISPAROS"></div>
-            <img src="images/ps2/pac-man-w2.jpg" title="Pac Man World 2 - AVENTURA"></div>
-            <img src="images/ps2/Silent_Hill_2.jpg" title="Silent Hill 2 - TERROR"></div>
-            <img src="images/ps2/state-of-emergency-2.jpg" title="State of Emergency 2 - DISPAROS"></div>
-            
-            
+        <div class="bodega">
+            <h3 id="psp">Juegos de Play Station Portable <span class="icon-down-open"></span></h3>   <!-- ---------------------------------------------------------------------- --> 
+            <div class="estante psp">
+                <img src="images/psp/burnout-legends.jpg" title="Burnout Legend - CARRERAS">
+                <img src="images/psp/callofduty-road.jpg" title="Call of Duty Roads to Victory - Shooter">
+                <img src="images/psp/crash-of-the-titans.jpg" title="Crash of the titans - PLATAFORMAS 3D">
+                <img src="images/psp/crashmindvermutants.jpg" title="Crash mind over mutants - PLATAFORMAS 3D">
+                <img src="images/psp/crash-tag-team-racing.jpg" title="Crash Tag Team Racing - Platadormas CARRERAS">
+                <img src="images/psp/Dragon-Ball-Z-Tag-Team.jpg" title="Dragon Ball Z Tag Team - PELEAS">
+                <img src="images/psp/dragonballshinbudokai2.jpg" title="Dragon Ball Shin Budokai 2 - PELEAS">
+                <img src="images/psp/fifa-street.jpg" title="Fifa Street - Deportes">
+                <img src="images/psp/g-force.jpg" title="G Force - Plataformas 3d">
+                <img src="images/psp/God-of-War-Ghost-of-Sparta.jpg" title="God of War Ghost Of Sparta - HACK N SLASH">
+                <img src="images/psp/Gowchains.jpg" title="God Of war Chains of Olympus - HACK N SLASH">
+                <img src="images/psp/gtachinatown.jpg" title="GTA Chinatown Wars - Mundo Abierto">
+                <img src="images/psp/gtalibertycity.jpg" title="GTA Luberty City Stories - MUNDO ABIERTO">
+                <img src="images/psp/gtavicecity.jpg" title="GTA Vice City Stories - MUNDO ABIERTO">
+                <img src="images/psp/metalslugantology.jpg" title="Metal Slug Antology - Run n Gun">
+                <img src="images/psp/metalxxport.jpg" title="Metal Slug XX - RUN N GUN">
+                <img src="images/psp/mikuproyectdiva.jpg" title="Hatsune Miku Project Diva - RITMO">
+                <img src="images/psp/monsterhunter-freedom-unite.jpg" title="Monster Hunter Freedom Unite - ACCIÓN">
+                <img src="images/psp/Patapon%203.jpg" alt="" title="Paatapon 3 - RITMO">
+                <img src="images/psp/rockband-unplugged.jpg" title="Rockband Unplugged - RITMICO">
+                <img src="images/psp/Silent-Hill-Origins.jpg" title="Silent Hill Origins - Terror">
+                <img src="images/psp/simpson-game.jpg" title="Simpsons Game - AVENTURA">
+                <img src="images/psp/syphonfilterdarkmirror.jpg" title="Syphon Filter Dark Mirror - Shooter">
+                <img src="images/psp/tekken-6.jpg" title="Tekken 6 - PELEAS">
+            </div>
         </div>
-    </div>
 
-    <div class="bodega">
-        <h3 class="titulo" id="play3">Juegos de play station 3<span class="icon-up-open-1"></span></h3>
-        <div class="estante">
-        
-        <input class="caja" type="checkbox" id="box1">
-        <label for="box1"><img src="images/ps3/atelier-escha-logyps3.jpg" alt="" title="Atelier Escha & Logy - ROL - jRPG"></label>
-        
-        <img src="images/ps3/chavokart.jpg" class="a1" title="Chavo Kart - Carreras"></div>
-        
-        <input class="caja" type="checkbox" id="box2">
-        <label for="box2"><img src="images/ps3/danteps3.gif" alt="" title="Dante´s Inferno - HACK AND SLASH - AVENTURA"></label>
+        <div class="bodega">
+            <h3 id="pc">Juegos de PC<span class="icon-down-open"></span></h3>              <!-- ---------------------------------------------------------------------- --> 
+            <div class="estante pc">
+                <img src="images/pc/among-us.jpg" title="Among us - Battle Royale">
+                <img src="images/pc/Assasinscreed-Directorcuts.jpg">
+                <img src="images/pc/Atelier ryza.jpg">
+                <img src="images/pc/Atelier-Ryza-2.jpg" alt="">
+                <img src="images/pc/blazblue central.jpg" title="Blazblue Central Fiction - PELEAS">
+                <img src="images/pc/bobsponjabfbt.jpg">
+                <img src="images/pc/Borderlands.jpg">
+                <img src="images/pc/callofdutywarzone.jpg" alt="">
+                <img src="images/pc/catherine.jpg" title="Catherine - Puzzle">
+                <img src="images/pc/Crash Bandicoot Nsane Trilogy.jpg" title="Crash Bandicoot NSane Trilogy- Plataformas 3D">
+                <img src="images/pc/crash4.jpg" title="Crash Bandicoot 4 - Plataformas 3D">
+                <img src="images/pc/Crysis.jpg" title="Crysis - FPS">
+                <img src="images/pc/cuphead.jpg" title="Cuphead - Run n Gun">
+                <img src="images/pc/deadpool.jpg" title="Deadpool - AVENTURA">
+                <img src="images/pc/Doom-Eternal.webp" title="Doom Eternal - FPS">
+                <img src="images/pc/Dragon Quest XI.jpg" title="Dragon Quest XI - JRPG">
+                <img src="images/pc/fortnite.jpg" title="Fornite - Battle Royale">
+                <img src="images/pc/Gears_of_War_Portada.jpg" title="Gears of War - DISPAROS">
+                <img src="images/pc/genshin-impact.jpg" title="Genshin Impact - Accion Anime">
+                <img src="images/pc/GTA-V-portada.jpg" title="GTA V - ACCION">
+                <img src="images/pc/GTAIV.jpg" title="GTA IV - ACCION">
+                <img src="images/pc/Halo 2.png" title="Halo 2 - FPS">
+                <img src="images/pc/hellblade.jpg" title="hellblade Senuas Sacrifice - AVENTURA">
+                <img src="images/pc/hollow-knight-portada.jpg" title="Hollow Knight - Metroidvania">
+                <img src="images/pc/iconocalst.jpg" title="iconocalst - Metroidvania">
+                <img src="images/pc/Left_4_Dead.jpg" title="Left 4 Dead - FPS">
+                <img src="images/pc/Left_4_Dead_2.jpg" title="Left 4 Dead 2 - FPS">
+                <img src="images/pc/lego-batman.jpeg" title="Lego Batman - AVENTURA">
+                <img src="images/pc/lego-batman2.jpg" title="Lego Batman 2 - AVENTURA">
+                <img src="images/pc/lego-batman-3.jpg" title="Lego Batman 3 - AVENTURA">
+                <img src="images/pc/LegoMarvel.jpg" title="Lego Marvel Super Heroes - AVENTURA">
+                <img src="images/pc/little-nightmare.png" title="Little Nightmares - Aventura">
+                <img src="images/pc/little-nightmares-2.webp" title="Little Nightmares - Aventura">
+                <img src="images/pc/Little Witch Academia.jpg" title="Little Witch Academia - RPG">
+                <img src="images/pc/metal-slug-xx.jpg" title="Metal Slug XX - Run n Gun">
+                <img src="images/pc/minecraft.webp" title="Minecraft - Sandbox">
+                <img src="images/pc/minecraft-dungeons.jpg" title="Minecraft Dungeons - Dungeons">
+                <img src="images/pc/Monster Hunter World.jpg" title="Monster Hunter World - Aventura JRPG">
+                <img src="images/pc/nierautomata.png" title="Nier Autómata - Hack n SLASH">
+                <img src="images/pc/overcoocked.jpg" title="Overcoocked - Puzzle">
+                <img src="images/pc/overcoocked 2.jpg" title="Overcoocked 2 - Puzzle">
+                <img src="images/pc/paladines.jpeg" title="Paladines - FPS">
+                <img src="images/pc/plantvszombiebfn.jpg" title="Plantes vs Zombies - Puzzle">
+                <img src="images/pc/Prince of persia.jpg" title="Prince of Persia the Forgotten Sands - AVENTURA">
+                <img src="images/pc/Resident Evil 2 Remake.jpg" title="Resident Evil 2 Remake - Shooter">
+                <img src="images/pc/resident-evil-3-remake.webp" title="Resident Evil 3 Remake - Shooter">
+                <img src="images/pc/resident-evil-4.jpg" title="Resident Evil 4 - Shooter">
+                <img src="images/pc/REsident evil 5.jpg" title="Resident Evil 5 - Shooter">
+                <img src="images/pc/resident-evil-7-cover.jpg" title="Resident Evil 7 - TERROR">
+                <img src="images/pc/SAO Fatal Bullet.jpg" title="SAO Fatal Bullet - Shooter Aventura">
+                <img src="images/pc/SAO Lost Song.jpg" title="SAO Lost Song - Aventura">
+                <img src="images/pc/SAOhollowf.jpg" title="SAP Hollow Fragment - Aventura">
+                <img src="images/pc/Senran Kagura Peach Beach Splash.jpg" title="Senran Kagura Peach Beach Splash - Shooter">
+                <img src="images/pc/senrankagurashinoviversus.jpg" title="Senran Kagura Shinovi Versus - Hack n SLASH">
+                <img src="images/pc/Silent hill home coming.jpg" title="Silent Hill Homecoming - Terror">
+                <img src="images/pc/skullgirls.jpg" title="skullgirls - PELEAS">
+                <img src="images/pc/soic-mania-plus.jpg" title="Sonic Mania - Plataformas 2D">
+                <img src="images/pc/steam-persona-5-strikers.jpg" title="Persona 5 Strikers - HACK n SLASH">
+                <img src="images/pc/streetfighterv.jpg" title="Street Fighter V -  PELEAS">
+                <img src="images/pc/tetriseffect.jpg" title="Tetris Efect - Puzzle">
+                <img src="images/pc/toki.jpg" title="TOKI - Plataformas 2D">
+                <img src="images/pc/tomb_raider_goty_pc.jpg" title="Tomb Rider - ACCION">
+                <img src="images/pc/Transformers.jpg" title="Transformers the Game - AVENTURA">
                 
-        <input class="caja" type="checkbox" id="box3">
-        <label for="box3"><img src="images/ps3/gowcollps3.jpg" alt="" title="God Of War Collection - HACK AND SLASH - AVENTURA"></label>
-                
-        <input class="caja" type="checkbox" id="box4">
-        <label for="box4"><img src="images/ps3/hatsune-miku-pdf2-ps3.jpg" alt="" title="Hatsune Miku Project Diva F - RITMICO -MUSICAL"></label>
-                
-        <input class="caja" type="checkbox" id="box5">
-        <label for="box5"><img src="images/ps3/Shadow-Of-The-Colossus.jpg" alt="" title="Marvel Vs Capcom 2 - PELEAS - 2D -ANIME"></label>
-                
-        <input class="caja" type="checkbox" id="box6">
-        <label for="box6"><img src="images/ps3/mikuProjectfps3.jpg" alt="" title="Hatsune Miku Project Diva f2nd - RITMO"></label>
-                
-        <input class="caja" type="checkbox" id="box94">
-        <label for="box94"><img src="images/ps3/Odin_Sphere_Leifthrasir_BLUS3160.jpg"alt="" title="Crash Mind Over Mutant - PLATAFORMAS 3D"></label>
-                
-        <input class="caja" type="checkbox" id="box7">
-        <label for="box7"><img src="images/ps3/p5ps3.jpg" alt="" title="Persona 5 - ROL - RPG"></label>
-        
-        <img src="images/ps3/scott.jpg" class="a1" title="Scott Pilgrim vs The World the Game - Beat em up"></div>
-        
-        <input class="caja" type="checkbox" id="box8">
-        <label for="box8"><img src="images/ps3/Shovel_knight_ps3.jpg" alt="" title="Shovel Knigth - PLATAFORMAS 2D - PIXLEART"></label>
-                
-        <input class="caja" type="checkbox" id="box9">
-        <label for="box9"><img src="images/ps3/The%20guided%20fate%20paradox.jpg" alt="" title="The Guided Fate Paradox - RPG -TACTICA - ANIME"></label>
-                
-        <input class="caja" type="checkbox" id="box86">
-        <label for="box86"><img src="images/ps3/simppsosnvg.jpg" alt="" title="The Simpsons Game"></label>
-                
-        <input class="caja" type="checkbox" id="box53">
-        <label for="box53"><img src="images/ps3/Strider-PS3.jpg" alt="" title="Strider Hiryu - METROIDVANIA"></label>
-                
-        </div>
-    </div>   
-            <!--
-         
-           <img src="" class="psp" title=""></div>
-           
-           -->
-           
-     <div class="bodega">
-        <h3 class="titulo" id="psp">Juegos de PSP<span class="icon-down-open"></span></h3>
-        <div class="estante">
-              <img src="images/psp/burnout-legends.jpg" class="psp" title="Burnout Legend - CARRERAS">
-              <img src="images/psp/callofduty-road.jpg" class="psp" title="Call of Duty Roads to Victory - Shooter">
-              <img src="images/psp/crash-of-the-titans.jpg" class="psp" title="Crash of the titans - PLATAFORMAS 3D">
-              <img src="images/psp/crashmindvermutants.jpg" class="psp" title="Crash mind over mutants - PLATAFORMAS 3D">
-              <img src="images/psp/crash-tag-team-racing.jpg" class="psp" title="Crash Tag Team Racing - Platadormas CARRERAS">
-              <img src="images/psp/Dragon-Ball-Z-Tag-Team.jpg" class="psp" title="Dragon Ball Z Tag Team - PELEAS">
-              <img src="images/psp/dragonballshinbudokai2.jpg" class="psp" title="Dragon Ball Shin Budokai 2 - PELEAS">
-              <img src="images/psp/fifa-street.jpg" class="psp" title="Fifa Street - Deportes">
-              <img src="images/psp/g-force.jpg" class="psp" title="G Force - Plataformas 3d">
-              <img src="images/psp/God-of-War-Ghost-of-Sparta.jpg" class="psp" title="God of War Ghost Of Sparta - HACK N SLASH">
-              <img src="images/psp/Gowchains.jpg" class="psp" title="God Of war Chains of Olympus - HACK N SLASH">
-              <img src="images/psp/gtachinatown.jpg" class="psp" title="GTA Chinatown Wars - Mundo Abierto">
-              <img src="images/psp/gtalibertycity.jpg" class="psp" title="GTA Luberty City Stories - MUNDO ABIERTO">
-              <img src="images/psp/gtavicecity.jpg" class="psp" title="GTA Vice City Stories - MUNDO ABIERTO">
-              <img src="images/psp/metalslugantology.jpg" class="psp" title="Metal Slug Antology - Run n Gun">
-              <img src="images/psp/metalxxport.jpg" class="psp" title="Metal Slug XX - RUN N GUN">
-              <img src="images/psp/mikuproyectdiva.jpg" class="psp" title="Hatsune Miku Project Diva - RITMO">
-              <img src="images/psp/monsterhunter-freedom-unite.jpg" class="psp" title="Monster Hunter Freedom Unite - ACCIÓN">
-              <img src="images/psp/Patapon%203.jpg" alt="" class="psp" title="Paatapon 3 - RITMO">
-              <img src="images/psp/rockband-unplugged.jpg" class="psp" title="Rockband Unplugged - RITMICO">
-              <img src="images/psp/Silent-Hill-Origins.jpg" class="psp" title="Silent Hill Origins - Terror">
-              <img src="images/psp/simpson-game.jpg" class="psp" title="Simpsons Game - AVENTURA">
-              <img src="images/psp/syphonfilterdarkmirror.jpg" class="psp" title="Syphon Filter Dark Mirror - Shooter">
-              <img src="images/psp/tekken-6.jpg" class="psp" title="Tekken 6 - PELEAS">
-              
             </div>
-    </div>
-                <!-- 
-                <img src="" class="a1" title=""></div>
-                -->
-                
-    <div class="bodega">
-        <h3 class="titulo" id="wiiu">Juegos de Wii U<span class="icon-up-open-1"></span></h3>        
-        <div class="estante">
-            <img src="images/wiiu/bayonetta2.jpg" title="Bayonetta 2 - Aventura Hack n Slash"></div>
+        </div>
+        
+        <div class="bodega">
+            <h3 id="switch">Juegos de Nintendo Switch <span class="icon-down-open"></span></h3>
+            <div class="estante switch">
+                <img src="images/switch/atelier-ryza.jpg" title="Atelier Ryza - JRPG">
+                <img src="images/switch/bravely-default2.jpg" title="Bravely default 2 - JRPG">
+                <img src="images/switch/ctr_nitrofuled.jpeg" title="">
+                <img src="images/switch/fire-emblem-three-houses.jpg" title="Fire Emblem Three Houses - Estrategia">
+                <img src="images/switch/luigis-mansion-3.jpg" title="Luigis Mansion 3 - AVENTURA">
+                <img src="images/switch/mario_golf-super-rush.jpg" title="Mario Golf Super Rush">
+                <img src="images/switch/MarioRabbidsCover.jpg" title="Mario + Rabbids - Estrategia">
+                <img src="images/switch/metroid_dread.jpg" alt="">
+                <img src="images/switch/minecraft_dungeons.jpg" alt="">
+                <img src="images/switch/monster-hunter-generations-ultimate.jpg" title="Monster Hunter Generation - ARPG">
+                <img src="images/switch/pang adventures.jfif" alt="">
+                <img src="images/switch/planetarian.jpg" alt="">
+                <img src="images/switch/pokemon-lets-go-pikachu.jpg" title="Pokemon Lets Go pokemon-lets-go-pikachu">
+                <img src="images/switch/pokemon-shield.jpg" title="Pokemon Shield - JRPG">
+                <img src="images/switch/remilore.jpg" alt="">
+                <img src="images/switch/smashing_the.jpg" alt="">
+                <img src="images/switch/sott-pilgrim.jpg" title="Scott pilgrim vs The world - Beat em UP">
+                <img src="images/switch/super-mario-odissey.jpg" title="Super Mario Odissey">
+                <img src="images/switch/Super-Smash-Bros.-Ultimate-.jpg" title="Supero Smash Bross Ultimate - PELEAS">
+                <img src="images/switch/tokyo_mirage-session.jpg" alt="">
+                <img src="images/switch/yoshis_crafted.jpeg" alt="">
+                <img src="images/switch/zelda-links-awakening.jpg" title="Zelda Links Awakening">
+            </div>
+        </div>
 
-                <input class="caja" type="checkbox" id="box10">
-                <label for="box10"><img src="images/wiiu/mario-kart.jpg" alt="" title="Mario Kart 8 - KART - CARRERAS"></label>
+        <div class="bodega">
+            <h3 id="wiiu">Juegos de Wii u <span class="icon-down-open"></span></h3>  <!-- ---------------------------------------------------------------------- --> 
+            <div class="estante wiiu">
+                <img src="images/wiiu/bayonetta2.jpg" title="Bayonetta 2 - HACK n SLASH">
+                <img src="images/wiiu/breath-of-the-wild.jpg" title="Zelda Breath of the Wild - AVENTURA">
+                <img src="images/wiiu/legendzeldawindwaker.jpg" title="The Legend of Zelda Wind Waker - AVENTURA">
+                <img src="images/wiiu/mario-kart.jpg" title="Mario Kart 8 - Carreras">
+                <img src="images/wiiu/pokken-tournament.jpg" title="Pokken Tournament - PELEAS">
+                <img src="images/wiiu/super-mario-3d-world.jpg" title="Super Mario 3d World - PLATAFORMAS 3D">
+                <img src="images/wiiu/yoshis-woolly-world.jpg" title="Yoshis Wooly World - Plataformas 2.5d">
+                <img src="images/wiiu/zleda-twilight.jpg" title="Zelda Twilight Princess - AVENTURA">
                 
-                <input class="caja" type="checkbox" id="box11">
-                <label for="box11"><img src="images/wiiu/pokken-tournament.jpg" alt="" title="Pokken Tournament - PELEAS - 3D"></label>
-                
-                <input class="caja" type="checkbox" id="box12">
-                <label for="box12"><img src="images/wiiu/yoshis-woolly-world.jpg" alt="" title="Yoshi´s Woolly World - PLATAFORMAS 2.5D"></label>
-                
-                <input class="caja" type="checkbox" id="box13">
-                <label for="box13"><img src="images/wiiu/super-mario-3d-world.jpg" alt="" title="Super Mario 3d World - PLATAFORMAS 3D"></label>
-                
-                <img src="images/wiiu/zleda-twilight.jpg" class="a1" title="Zelda Twilight Princess - AVENTURA MASMORRAS"></div>
-                
-                <img src="images/wiiu/breath-of-the-wild.jpg" class="a1" title="Zelda Breath of the wild - AVENTURA MASMORRAS"></div>
-                
-                <input class="caja" type="checkbox" id="box54">
-                <label for="box54"><img src="images/wiiu/legendzeldawindwaker.jpg" alt="" title="Zelda Wind Waker - AVENTURA MASMORRAS"></label>
-        </div>
-    </div> 
-            
-                <!-- 
-                <img src="" class="ds" title=""></div>
-                -->
-    <div class="bodega">
-        <h3 class="titulo" id="3ds">Juegos de Nintendo 3ds<span class="icon-up-open-1"></span></h3>
-        <div class="estante">
-                <input class="caja" type="checkbox" id="box14">
-                <label for="box14"><img src="images/3ds/Animal_Crossing_New_Leaf.jpg" class="ds" alt="" title="Animal Crossing New Leaf- SIMULADOR"></label>
-                
-                <input class="caja" type="checkbox" id="box15">
-                <label for="box15"><img src="images/3ds/Asphalt-3d-3ds.jpg" class="ds" alt="" title="Asphalt 3d - CARRERAS - CONDUCCION"></label>
-                
-                <input class="caja" type="checkbox" id="box16">
-                <label for="box16"><img src="images/3ds/attack_on_titan-humanity%20in%20chains.jpg" class="ds" alt="" title="Attack on Titan Humanity in Chains - AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box17">
-                <label for="box17"><img src="images/3ds/Binding%20Of%20isac%20Rebird.jpg" class="ds" alt="" title="Binding of isaac Rebird - MASMORRAS"></label>
-                
-                <input class="caja" type="checkbox" id="box18">
-                <label for="box18"><img src="images/3ds/bravely_Default.jpg" class="ds" alt="" title="Bravely Default - ROL -RPG"></label>
-                
-                <input class="caja" type="checkbox" id="box19">
-                <label for="box19"><img src="images/3ds/Dementium%20Remastered.jpg" class="ds" alt="" title="Dementium Remastered - TERROR - FPS"></label>
-                
-                <input class="caja" type="checkbox" id="box55">
-                <label for="box55"><img src="images/3ds/Etrian%20Odisey%20V.jpg" class="ds" alt="" title="Etrian Odisey - Dungeons"></label>
-                
-                <input class="caja" type="checkbox" id="box45">
-                <label for="box45"><img src="images/3ds/Ever%20Oasis.jpg" class="ds" alt="" title="Ever Oasis - RPG"></label>
-                
-                <input class="caja" type="checkbox" id="box46">
-                <label for="box46"><img src="images/3ds/fantasy-life.png" class="ds" alt="" title="Fantasy Life - RPG AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box88">
-                <label for="box88"><img src="images/3ds/ironfall_invations.jpg" class="ds" alt="" title="Iron Fall invation - SHOOOTER"></label>
-                
-                <input class="caja" type="checkbox" id="box47">
-                <label for="box47"><img src="images/3ds/kid-icarus_uprising.jpg" class="ds" alt="" title="kid Ikarus Uprising - DISPAROS"></label>
-                
-                <input class="caja" type="checkbox" id="box48">
-                <label for="box48"><img src="images/3ds/kirby-planet-robot.jpg" class="ds" alt="" title="Kirby Planet Robobot - AVENTURA - PLATAFORMAS 3D"></label>
-                
-                <input class="caja" type="checkbox" id="box56">
-                <label for="box56"><img src="images/3ds/Layton%20Katherine.jpg" class="ds" alt="" title="Laytons Journey Katherine - Puzzle"></label>
-                
-                <input class="caja" type="checkbox" id="box49">
-                <label for="box49"><img src="images/3ds/Lego%20Piratas%20del%20caribe.jpg" class="ds" alt="" title="LEGO Piratas Del Caribe - Aventura"></label>
-                
-                <input class="caja" type="checkbox" id="box57">
-                <label for="box57"><img src="images/3ds/LM%20Avengers.jpg" class="ds" alt="" title="LEGO Marvel Avenger - PUZZLE AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box58">
-                <label for="box58"><img src="images/3ds/luigis-mansion_3ds_portada.jpg" class="ds" alt="" title="Luigis Mansion - PUZZLE DUNGEONS"></label>
-                
-                <input class="caja" type="checkbox" id="box59">
-                <label for="box59"><img src="images/3ds/luigis-mansion-2.jpg" class="ds" alt="" title="Luigis Mansion 2 - PUZZLE DUNGEONS"></label>
-                
-                <input class="caja" type="checkbox" id="box87">
-                <label for="box87"><img src="images/3ds/mario64.jpg" class="ds" alt="" title="Super Mario 64"></label>
-                
-                <input class="caja" type="checkbox" id="box50">
-                <label for="box50"><img src="images/3ds/Mario%20Kart%207.jpg" class="ds" alt="" title="Mario KArt 7 - CARRERAS KARTZ"></label>
-                
-                <input class="caja" type="checkbox" id="box60">
-                <label for="box60"><img src="images/3ds/MArio%20y%20Luigi%20Bowser%20inseide.jpg" class="ds" alt="" title="Mario & Luigi Bowser inside Story - RPG"></label>
-                
-                <input class="caja" type="checkbox" id="box61">
-                <label for="box61"><img src="images/3ds/metroid-samus-returns.jpg" class="ds" alt="" title="Metroid Samus Return - METROIDVANIA"></label>
-                
-                <input class="caja" type="checkbox" id="box51">
-                <label for="box51"><img src="images/3ds/Miku%20Project%20mirai%20DX.jpg" class="ds" alt="" title="Hatsune Miku Project Mirai DX"></label>
-                
-                <input class="caja" type="checkbox" id="box62">
-                <label for="box62"><img src="images/3ds/Monster%20hunter%204%20ultimate.jpg" class="ds" alt="" title="Monster Hunter 4 Ultimate - ARPG"></label>
-                
-                <input class="caja" type="checkbox" id="box89">
-                <label for="box89"><img src="images/3ds/monster-hunter-generations.jpg" class="ds" alt="" title=""></label>
-                
-                <input class="caja" type="checkbox" id="box63">
-                <label for="box63"><img src="images/3ds/monster-hunter-stories.jpg" class="ds" alt="" title="Monster Hunter Histories - RPG"></label>
-                
-                <input class="caja" type="checkbox" id="box64">
-                <label for="box64"><img src="images/3ds/Newsupermariobros2.jpg" class="ds" alt="" title="New Super Mario Bros 2 - PLATAFORMAS 2.5D"></label>
-                
-                <input class="caja" type="checkbox" id="box91">
-                <label for="box91"><img src="images/3ds/PQ.jpg" class="ds" alt="" title=""></label>
-                
-                <input class="caja" type="checkbox" id="box65">
-                <label for="box65"><img src="images/3ds/Pok%C3%A9mon_X.png" class="ds" alt="" title="Pokemon X"></label>
-                
-                <input class="caja" type="checkbox" id="box66">
-                <label for="box66"><img src="images/3ds/Pok%C3%A9mon_Y.png" class="ds" alt="" title="Pokemon Y"></label>
-                
-                <input class="caja" type="checkbox" id="box67">
-                <label for="box67"><img src="images/3ds/Pok%C3%A9mon_Zafiro_Alfa.png" class="ds" alt="" title="Pokemon Alfa Zafiro"></label>
-                
-                <input class="caja" type="checkbox" id="box68">
-                <label for="box68"><img src="images/3ds/Pokmeonruby.jpg" class="ds" alt="" title="Pokemon Rubi"></label>
-                
-                <input class="caja" type="checkbox" id="box69">
-                <label for="box69"><img src="images/3ds/pokemon-sol.jpg" class="ds" alt="" title="Pokemon Sol"></label>
-                
-                <input class="caja" type="checkbox" id="box70">
-                <label for="box70"><img src="images/3ds/pokemonluna.png" class="ds" alt="" title="Pokemon Luna"></label>
-                
-                <input class="caja" type="checkbox" id="box71">
-                <label for="box71"><img src="images/3ds/pokemon-ultrasol.jpg" class="ds" alt="" title="Pokemon Ultra sol"></label>
-                
-                <input class="caja" type="checkbox" id="box72">
-                <label for="box72"><img src="images/3ds/ultra%20luna.jpg" class="ds" alt="" title="Pokemon Ultra Luna"></label>
-                
-                <input class="caja" type="checkbox" id="box90">
-                <label for="box90"><img src="images/3ds/pookemonppicros.jpg" class="ds" alt="" title="Pokemon Picross - PUZZLES"></label>
-                
-                <input class="caja" type="checkbox" id="box73">
-                <label for="box73"><img src="images/3ds/project-x-zone-2.jpg" class="ds" alt="" title="Project x Zone 2"></label>
-                
-                <input class="caja" type="checkbox" id="box84">
-                <label for="box84"><img src="images/3ds/Resident-evil-mercenaries.jpg" class="ds" alt="" title="Resident Evil Mercenaries - DISPAROS ZOMBIES"></label>
-                
-                <input class="caja" type="checkbox" id="box85">
-                <label for="box85"><img src="images/3ds/residentrevelations.jpg" class="ds" alt="" title="Resident Evil Revelations - Disparos Zombies"></label>
-                
-                <input class="caja" type="checkbox" id="box92">
-                <label for="box92"><img src="images/3ds/shakdown_hawaii.jpg" class="ds" alt="" title=""></label>
-                
-                <input class="caja" type="checkbox" id="box93">
-                <label for="box93"><img src="images/3ds/shovel.jpg" class="ds" alt="" title="Shovel Knight - PLATAFORMAS PIXEL"></label>
-                
-                <input class="caja" type="checkbox" id="box74">
-                <label for="box74"><img src="images/3ds/sonic%20genetation.jpg" class="ds" alt="Sonic Generations" title="Sonic Generations"></label>
-                
-                <input class="caja" type="checkbox" id="box75">
-                <label for="box75"><img src="images/3ds/starfox%203d.jpg" class="ds" alt="" title="Starfox 64 3D"></label>
-                
-                <input class="caja" type="checkbox" id="box76">
-                <label for="box76"><img src="images/3ds/steamworld-dig.jpg" class="ds" alt="" title="Steam World Dig"></label>
-                
-                <input class="caja" type="checkbox" id="box77">
-                <label for="box77"><img src="images/3ds/steamworlddig2.jpg" class="ds" alt="" title="Steam World Dig 2"></label>
-                
-                <input class="caja" type="checkbox" id="box78">
-                <label for="box78"><img src="images/3ds/super-mario-maker.jpg" class="ds" alt="" title="Super Mario Maker"></label>
-                
-                <input class="caja" type="checkbox" id="box79">
-                <label for="box79"><img src="images/3ds/Super_Mario_3D_Land.jpg" class="ds" alt="" title="Super Mario 3d Land - PLATAFORMAS 3D"></label>
-                
-                <input class="caja" type="checkbox" id="box80">
-                <label for="box80"><img src="images/3ds/sushi-striker.jpg" class="ds" alt="" title="Sushi Strikers"></label>
-                
-                <input class="caja" type="checkbox" id="box82">
-                <label for="box82"><img src="images/3ds/xenobladecronicles3d.jpg" class="ds" alt="" title="Xenoblade Chronicles - MUNDO ABIERTO - ARPG"></label>
-                
-                <input class="caja" type="checkbox" id="box81">
-                <label for="box81"><img src="images/3ds/the-legend-of-zelda-ocarina-of-time.jpg" class="ds" alt="" title="Zelda Ocarina of Time - AVENTURA - DUNGEONS"></label>
-                
-                <input class="caja" type="checkbox" id="box83">
-                <label for="box83"><img src="images/3ds/Zelda%20a%20link%20Betwen%20World.jpg" class="ds" alt="" title="Zelda A link Betwen Worlds - DUNGEONS 2.5D - AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box52">
-                <label for="box52"><img src="images/3ds/Zelda%20Majora.jpg" class="ds" alt="" title="Zelda Majoras Mask - AVENTURA"></label>
             </div>
-    </div>
-                <!-- Codigo PC
-                
-                
-                <img src="" title=""></div>
-                
-                -->
-    <div class="bodega">
-        <h3 class="titulo" id="pc">Juegos de PC<span class="icon-up-open-1"></span></h3>
-        <div class="estante">
+        </div>
         
-               
-                <input class="caja" type="checkbox" id="box20">
-                <label for="box20"><img src="images/pc/Assasinscreed-Directorcuts.jpg" alt="" title="Assasins Creed - AVENTURA"></label>
-                
-                <img src="images/pc/Atelier%20ryza.jpg" alt="" class="a1" title="Atelier Ryza - JRPG"></div>
-                <img src="images/pc/Atelier-Ryza-2.jpg" class="a1" title="Atelier Ryza 2 - JRPG"></div>
-                <img src="images/pc/bobsponjabfbt.jpg" class="a1" title="Bob esponja Battle for bikini bottom rehidratado- aventura"></div>
-                <input class="caja" type="checkbox" id="box21">
-                <label for="box21"><img src="images/pc/Borderlands.jpg" alt="" title="Borderlands - FPS"></label>
-                
-                <img src="images/pc/callofdutywarzone.jpg" class="a1" title="Call of Duty Warzone - BATTLE ROYALE"></div>
-                
-                <input class="caja" type="checkbox" id="box22">
-                <label for="box22"><img src="images/pc/catherine.jpg" alt="" title="Catherine - PUZZLES"></label>
-                
-                <input class="caja" type="checkbox" id="box23">
-                <label for="box23"><img src="images/pc/Crash%20Bandicoot%20Nsane%20Trilogy.jpg" alt="" title="Crash Bandicoot Nsane Trilogy - AVENTURA - PLATAFORMAS 3D"></label>
-                <img src="images/pc/crash4.jpg" title="Crash Bandicoot 4 - Plataformas 3D"></div>
-                <input class="caja" type="checkbox" id="box24">
-                <label for="box24"><img src="images/pc/Crysis.jpg" alt="" title=" Crysis - FPS"></label>
-                
-                <img src="images/pc/cuphead.jpg" alt="" class="a1" title="Cuphead - BULLETHELL RUN N GUN"></div>
-                
-                <input class="caja" type="checkbox" id="box25">
-                <label for="box25"><img src="images/pc/deadpool.jpg" alt="" title="Deadpool - AVENTURA HACK AND SLASH"></label>
-                
-                <img src="images/pc/Doom-Eternal.webp" alt="" class="a1" title="Doom Eternal - FPS"></div>
-                
-                <input class="caja" type="checkbox" id="box26">
-                <label for="box26"><img src="images/pc/Dragon%20Quest%20XI.jpg" alt="" title="Dragon Quest XI - JRPG AVENTURA"></label>
-                
-                <img src="images/pc/fortnite.jpg" alt="" class="a1" title="Fornite - BATTLE ROYALE"></div>
-                
-                <input class="caja" type="checkbox" id="box27">
-                <label for="box27"><img src="images/pc/Gears_of_War_Portada.jpg" alt="" title="Gears of war - DISPAROS"></label>
-                
-                <input class="caja" type="checkbox" id="box28">
-                <label for="box28"><img src="images/pc/GTAIV.jpg" alt="" title="GTA IV - MUNDO ABIERTO - AVENTURA"></label>
-                
-                <img src="images/pc/GTA-V-portada.jpg" alt="" class="a1" title="GTAV - MUNDO ABIERTO"></div>
-                
-                <input class="caja" type="checkbox" id="box29">
-                <label for="box29"><img src="images/pc/Halo%202.png" alt="" title="Halo 2 - FPS"></label>
-                
-                <img src="images/pc/hellblade.jpg" alt="" class="a1" title="Hellblade - AVENTURA"></div>
-                
-                <img src="images/pc/hollow-knight-portada.jpg" alt="" class="a1" title="Hollow Knight - METROIDVANIA"></div>
-                
-                <img src="images/pc/iconocalst.jpg" alt="" class="a1" title="Iconoclast - METROIDVANIA"></div>
-                
-                <img src="images/pc/Left_4_Dead.jpg" alt="" class="a1" title="Left 4 Dead - FPS"></div>
-                <img src="images/pc/Left_4_Dead_2.jpg" title="Left 4 Dead 2 - DISPAROS FPS"></div>
-                <input class="caja" type="checkbox" id="box30">
-                <label for="box30"><img src="images/pc/LegoMarvel.jpg" alt="" title=" LEGO Marvel Super Heroes - AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box31">
-                <label for="box31"><img src="images/pc/Little%20Witch%20Academia.jpg" alt="" title="Little Witch Academia - RPG AVENTURA"></label>
-                
-                <img src="images/pc/metal-slug-xx.jpg" alt="" class="a1" title="Metal Slug XX - RUN n GUN"></div>
-                
-                <input class="caja" type="checkbox" id="box32">
-                <label for="box32"><img src="images/pc/Monster%20Hunter%20World.jpg" alt="" title="Monster Hunter World - ARPG"></label>
-                
-                <img src="images/pc/overcoocked.jpg" alt="" class="a1" title="Overcocked - MULTIJUGADOR"></div>
-                <img src="images/pc/overcoocked%202.jpg" alt="" class="a1" title="Overcocked 2 - MULTIJUGADOR"></div>
-                <img src="images/pc/paladines.jpeg" alt="" class="a1" title="Paladines - FPS ARENA"></div>
-                <img src="images/pc/steam-persona-5-strikers.jpg" title="Persona 5 Strikers - Hack n SLASH"></div>
-                <img src="images/pc/plantvszombiebfn.jpg" class="a1" title="Plantas vs Zombies Bat for neigt - ACCION DISPAROS"></div>
-                
-                <input class="caja" type="checkbox" id="box33">
-                <label for="box33"><img src="images/pc/Prince%20of%20persia.jpg" alt="" title="Prince of Persia - ACCION - AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box34">
-                <label for="box34"><img src="images/pc/Resident%20Evil%202%20Remake.jpg" alt="" title="Resident Evil 2 Remake - TERROR DISPAROS"></label>
-                
-                <input class="caja" type="checkbox" id="box36">
-                <label for="box36"><img src="images/pc/resident-evil-3-remake.webp" alt="" title="Resident Evil 3 Remake - DISPAROS TERROR"></label>
-                
-                <img src="images/pc/resident-evil-4.jpg" alt="" class="a1" title="Resident Evil 4 HD - DISPAROS TERROR"></div>
-                
-                <input class="caja" type="checkbox" id="box35">
-                <label for="box35"><img src="images/pc/REsident%20evil%205.jpg" alt="" title="Resident Evil 5 - DISPAROS - TERROR"></label>
-                <img src="images/pc/resident-evil-7-cover.jpg" class="a1" title="Resident Evil 7 - TERROR DISPAROS"></div>
-                <input class="caja" type="checkbox" id="box37">
-                <label for="box37"><img src="images/pc/SAO%20Fatal%20Bullet.jpg" alt="" title="SAO Fatal Bullet - DISPAROS - AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box38">
-                <label for="box38"><img src="images/pc/SAO%20Lost%20Song.jpg" alt="" title="SAO Lost Song - AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box39">
-                <label for="box39"><img src="images/pc/SAOhollowf.jpg" alt="" title="SAO Hollow Fragment - AVENTURA"></label>
-                
-                <input class="caja" type="checkbox" id="box40">
-                <label for="box40"><img src="images/pc/Senran%20Kagura%20Peach%20Beach%20Splash.jpg" alt="" title="Senran Kagura Peach Beach Splash - DISPAROS - AVETURA"></label>
-                
-                <input class="caja" type="checkbox" id="box41">
-                <label for="box41"><img src="images/pc/senrankagurashinoviversus.jpg" alt="" title="Senran Kagura Shinovi Versus - Hack And Slash - HACK AND SLASH - AVETURA"></label>
-                
-                <input class="caja" type="checkbox" id="box42">
-                <label for="box42"><img src="images/pc/Silent%20hill%20home%20coming.jpg" alt="" title="Silent Hill Homecoming - TERROR"></label>
-                
-                <img src="images/pc/skullgirls.jpg" alt="" class="a1" title="Skullgirls - PELEAS"></div>
-                
-                <img src="images/pc/streetfighterv.jpg" alt="" class="a1" title="Street Fighter V - PELEAS"></div>
-                
-                <input class="caja" type="checkbox" id="box43">
-                <label for="box43"><img src="images/pc/tetriseffect.jpg" alt="" title="Tetris Effect - PUZZLES"></label>
-                
-                <input class="caja" type="checkbox" id="box44">
-                <label for="box44"><img src="images/pc/Transformers.jpg" alt="" title="Transformers The Game - AVENTURA"></label>
+        <div class="bodega">
+            <h3 id="wii">Juegos de Wii <span class="icon-down-open"></span></h3>
+            <div class="estante wii">
+                <img src="images/wii/crash-mind-over-mutants.jpg" title="Crash mind over Mutants - Plataformas 3D">
+                <img src="images/wii/guita-hero-metallica.jpg" title="Guitar Hero Metallica">
+                <img src="images/wii/jd-unlimited-party.jpg" title="Just Dance Unlimited Party">
+                <img src="images/wii/jd2014.jpg" title="Just Dance 2014">
+                <img src="images/wii/jd2015.jpg" title="Just Dance 2015">
+                <img src="images/wii/jd2016.jpg" title="Just Dance 2016">
+                <img src="images/wii/jd2017.jpg" title="Just Dance 2017">
+                <img src="images/wii/jd2018.jpg" title="Just Dance 2018">
+                <img src="images/wii/jd2019.jpg" title="Just Dance 2019">
+                <img src="images/wii/jd2020.jfif" title="Just Dance 2020">
+                <img src="images/wii/jdgreatest-hits.jpg" title="just Dance Gratest Hits">
+                <img src="images/wii/just-dance-4.jpg" title="just Dance 4">
+                <img src="images/wii/rockband-the-beatles.jpg" title="Rockband The Beatles">
+
+            </div>    
         </div>
+
+        <div class="bodega">
+            <h3 id="gamecube">Juegos de Gamecube<span class="icon-down-open"></span></h3>
+            <div class="estante gamecube">
+                <img src="images/gamecube/crash-nitro-kart.png" title="Crash Nitrop Kart - CARRERAS">
+                <img src="images/gamecube/crash-ttr.jpg" title="Crash Tag Team Racing - Carreras">
+                <img src="images/gamecube/def-jam-ff-ny.jpg" title="Def Jam Fight For NY - PELEAS">
+                <img src="images/gamecube/disney-estreme-skate.jpg" title="Disney Extreme Skate - Deportes">
+                <img src="images/gamecube/ghost-recon-2.png" title="Ghost Recon 2 - DISPAROS">
+                <img src="images/gamecube/knd-videogame.jpg" title="KND Videogame - Aventura">
+                <img src="images/gamecube/Mario_Kart_Double_Dash.jpg" title="Mario Kart Double Dash - Carreras">
+                <img src="images/gamecube/Super_Mario_Sunshine_Box.jpg" title="Super Mario Sunshine - Plataformas 3D">
+            </div>
+        </div>
+
+        <div class="bodega">
+            <h3 id="3ds">juegos de Nintendo 3DS <span class="icon-down-open"></span></h3>
+            <div class="estante cuadro 3ds">
+                <img src="images/3ds/Animal_Crossing_New_Leaf.jpg" alt="SANDBOX">
+                <img src="images/3ds/Asphalt-3d-3ds.jpg" alt="CARRERAS">
+                <img src="images/3ds/attack_on_titan-humanity in chains.jpg" alt="ACCION">
+            </div>
+        </div>
+        
+
+
+    </section>
+    <div class="ir-arriba">
+        <span class="icon-down-open"></span>
     </div>
-            <!-- _______________________________________________________________________ -->
-         
-           
-         
-         
-         
-         
-        </main>
-        <!-- <aside>
-           
-           ----------------------------- BUSCAR PLUG IN SIDEBAR --------------------------------
-           
-            <div class="bloque">
-                <h3>Buscar</h3>
-                <script async src="https://cse.google.com/cse.js?cx=005208128495834736334:ucvmefrny7u"></script>
-                <div class="gcse-search"></div>
-            </div>
-            
-           ----------------------------- FIN BUSCAR PLUG IN SIDEBAR --------------------------------   
-            
-            <div class="bloque">
-                <h3>TITULO DE BLOQUE</h3>
-                <a href="http://bit.ly/2Lgnjmt"><img src="https://i.ibb.co/KNGM86s/Nuevo-canal.jpg" alt=""></a>
-            </div>
-            <div class="bloque">
-                <h3>TITULO DE BLOQUE</h3>
-                <a href="https://pokefanleoretrogames.github.io/post/programas/descargar-de-mega-sin-limite.html"><img src="https://i.ibb.co/zxPKnJY/Megawid.gif" alt=""></a>
-            </div>
-            
-            -------------- PLUG IN FACEBOOK SIDEBAR ---------
-            
-            <div class="bloque">
-                <h3>FACEBOOK</h3>
-                <center>
-                    <div class="fb-page" data-href="https://www.facebook.com/pokefanleoretrogames" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-                </center>
-            </div>
-            
-            -------------- FIN PLUG IN FACEBOOK SIDEBAR ---------
-            
-        </aside> -->
-        <!--
-        <div class="uso-cookies">
-            <h3>*** Uso de cookies ***</h3>
-            <p>Para mejorar la experiencia de navegación se utilizan Cookies propias y de terceros. Al continuar con la navegación se entiende que se acepta su uso.</p>
-        </div>
-        -->
-        <footer>
-            <p>pokefanleoretrogames.com no contiene en su alojamiento ninguna clase de archivos, dicho alojamineto es freesourse junto con el codigo de esta pagina y los plugins utilizados como github, facebook y google</p>
-            <p>"Libertad de tránsito y acceso a la informacion debe ser un derecho, y es diferente a la pirateria, éste último es un tema que merece debate y queda en cada persona una visión própia"</p>
-            <ul>
-                <li><a href="#">PokefanleoRetrogames</a></li>
-                <li><a href="#">Juegos de PC</a></li>
-                <li><a href="#">Donar</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">Acerca de</a></li>
-            </ul>
-        </footer>
-        <div class="ir-arriba">
-            <span class="icon-down-open"></span>
-        </div>
-    </div>
-    
-    
-    
     <script src="js/scripts.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-
-	
 </body>
-
 </html>

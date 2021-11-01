@@ -24,21 +24,6 @@ function cerrarmenu() {
         left:'-100%'
     });
 }
-
-// SCRIPT DE CLICK EN IMAGEN
-
-$(".portada img").click(function(){
-    $(this).toggleClass("img-grande");
-});
-
-$(".a2 .psp").click(function(){
-    $(this).toggleClass("img-grande-psp");
-});
-$(".a2 .ds").click(function(){
-    $(this).toggleClass("img-grande-psp");
-});
-
-
 // MOSTRAMOS Y OCULTAMOS SUBMENUS
 
 $(".sub-menu").click(function () {
@@ -49,64 +34,15 @@ $(".menu-hijo").click(function (p) {
     p.stopPropagation();
 })
 
-// MOSTRAMOS BUSQUEDA DE MOVIL 
-
-
-$(".buscar-bar").click(function () {
-    $(this).siblings(".gl-movil").slideToggle("fast");
-});
-// Ocultar estantes
-
-
-$(".bodega .titulo").click(function() {
-    $(this).siblings(".estante").slideToggle("fast");
-});
+// Cambiar icono de h3
 
 $("h3").click(function(){
-   $(this).children("span").toggleClass("icon-down-open").toggleClass("icon-up-open-1"); 
-});
+    $(this).children("span").toggleClass("icon-up-open-1"); 
+ });
 
+ // boton de ir arriba 
 
-
-// SCRIPTS DE SLIDE
-
-var swiper = new Swiper('.swiper-container', {
-    grabCursor: true,
-    slidesPerView: 'auto',
-    spaceBetween: 10,
-    freeMode: true,
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-
-
-// script de comentarios
-
-window.fbAsyncInit = function() {
-    FB.init({
-      appId            : 'your-app-id',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v5.0'
-    });
-  };
-
-// BOTON DE SUBIR
-
-$(document).ready(function(){
+ $(document).ready(function(){
     $(".ir-arriba").click(function(){
         $("body, html").animate({
             scrollTop: "0px"
@@ -123,52 +59,47 @@ $(document).ready(function(){
     
 });
 
-// Cookies
+// Ocultar estantes
 
-$(document).ready(function(){
-    
-    
-    $(window).scroll(function(){
-        if( $(this).scrollTop() > 100){
-                $(".uso-cookies").slideUp(300);
-           } else {
-                $(".uso-cookies").slideDown(300);
-           }
-    });
-    
+
+$(".bodega h3").click(function() {
+    $(this).siblings(".estante").slideToggle("fast");
 });
-// MOSTRAR LOS ENLACES
 
-$(".mostrar-enlaces").click(function () {
-    $(this).siblings(".lista-link-portadas , .unico-enlace , .daemond-unico , .lista-links-instaladores , .daemond-lista").slideToggle();
+//imagenes grandes
+
+$(".estante img").click(function(){
+    $(this).toggleClass("img-grande");
 });
 
 
 
+// Titulos 
+$("img").hover(function(){
+    var nombre = $(this).attr("src");
+    var genero = $(this).attr("alt");
+    var pc = nombre.slice(10,-4);
+    var nswitch = nombre.slice(14,-4);
+    var psx = nombre.slice(11,-4);
+    var ps2 = nombre.slice(11,-4);
+    var ps3 = nombre.slice(11, -4);
+    var psp = nombre.slice(11,-4);
+    var gamecube = nombre.slice(16,-4);
+    var wii = nombre.slice(11, -4);
+    var wiiu = nombre.slice(12, -4);
+    var threeds = nombre.slice(11,-4);
+    
+    $(".switch img").attr("title", nswitch + " - " + genero);
+    $(".pc img").attr("title", pc + " - " + genero);
+    $(".psx img").attr("title", psx + " - " + genero);
+    $(".ps3 img").attr("title", ps3 + " - " + genero);
+    $(".ps2 img").attr("title", ps2 + " - " + genero);
+    $(".psp img").attr("title", psp + " - " + genero);
+    $(".gamecube img").attr("title", gamecube + " - " + genero);
+    $(".wii img").attr("title", wii + " - " + genero);
+    $(".wiiu img").attr("title", wiiu + " - " + genero);
+    $(".3ds img").attr("title", threeds + " - " + genero);
 
-// PUBLIDIDAD
-
-function quitar_publicidad(){
-		document.getElementById("publicidad").style.display = "none";
-}
-
-function quitar_publicidad1(){
-		document.getElementById("publicidad1").style.display = "none";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+});
 

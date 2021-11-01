@@ -12,17 +12,15 @@
 }
 
 header {
-    position: relative;
-    display: block;
     width: 100%;
+    z-index: 100;
 }
 
 header nav {
-    background: rgba(34, 112, 147, .7);
-    display: block;
-    position: absolute;
+    background: var(--color-terciario);
+    display: inline-block;
     width: 100%;
-    bottom: 0%;
+    top: 0%;
 }
 
 header nav ul li span {
@@ -38,11 +36,11 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     position: relative;
-
+    
 }
 
 header nav ul li:hover {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .2);
 
 }
 
@@ -66,7 +64,7 @@ header nav ul span {
 
 header nav ul li .menu-hijo {
     display: none;
-    background: rgba(34, 112, 147, 1);
+    background: var(--color-principal);
     position: absolute;
     width: 150%;
     z-index: 1000;
@@ -101,11 +99,12 @@ header nav ul li .icon-down-open {
     .menu-bar {
         position: fixed;
         display: block;
-        background: #1ce2e2;
+        background: var(--color-terciario);
         top: 5px;
         right: 2%;
         z-index: 80;
         cursor: pointer;
+        border: solid #fff;
     }
 
     .menu-bar .boton-menu {
@@ -131,7 +130,7 @@ header nav ul li .icon-down-open {
         right: 100%;
         overflow: scroll;
         top: 0;
-        background: #073763;
+        background: var(--color-terciario);
         z-index: 100;
     }
 
