@@ -8,9 +8,9 @@
 }
 
 :root{
-    --color-principal: #FAC739;
-    --color-secundario: rgba(255,255,255,.7);
-    --color-terciario: #FA942A;
+    --color-principal: #30314d;
+    --color-secundario: rgba(255,255,255,.3);
+    --color-terciario: #1c1c26;
 }
 
 body {
@@ -97,6 +97,10 @@ h3 span {
 .switch img {
     width: 140;
     height: auto;
+}
+
+.estante .terminado {
+    outline: #119e43 solid 5px;
 }
 
 
