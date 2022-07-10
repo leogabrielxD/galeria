@@ -86,11 +86,11 @@ h3 span {
 }
 
 .cuadro img {
-    width: 140px;
+    width: 150px;
     height: auto;
 }
 .psp img {
-    width: 135px;
+    width: 140px;
     height: auto;
 }
 
@@ -100,7 +100,8 @@ h3 span {
 }
 
 .estante .terminado {
-    outline: #119e43 solid 5px;
+    outline: #00eeff solid 3px;
+    border: #fff solid 2px;
 }
 
 
@@ -108,7 +109,7 @@ h3 span {
 
     .estante img {
         width: 100px;
-        height: 135px;
+        height: auto;
     }
 
     .cuadro img {
@@ -121,5 +122,14 @@ h3 span {
         height: auto;
         left: 3%;
         top: 10%;
+    }
+    .psp img {
+        width: 100px;
+        height: auto;
+    }
+    
+    .switch img {
+        width: 100px;
+        height: auto;
     }
 }
