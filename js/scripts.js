@@ -103,3 +103,24 @@ $("img").hover(function(){
     
 });
 
+// colores de borde
+
+
+
+
+window.onload = function(){
+    var terminado = document.querySelectorAll(".terminado");
+    var colores = ['#808080', '#9c9c9c', '#c9c9c9', '#fff', '#c9c9c9', '#9c9c9c'];
+    var t = setInterval(rgb, 150);
+
+    function rgb(){ 
+        var color = colores.shift();
+        colores.push(color);
+        
+        for (var lista = 0; lista < terminado.length; lista++){
+            terminado[lista].style.borderColor = color;
+        }
+    }
+}
+
+

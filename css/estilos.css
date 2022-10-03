@@ -99,11 +99,18 @@ h3 span {
     height: auto;
 }
 
+
 .estante .terminado {
-    outline: #00eeff solid 3px;
-    border: #fff solid 2px;
+    border: #fff dotted 5px;
 }
 
+#terminado {
+    background-color:blue;
+    border: solid #fff 10px;
+    width:200px;
+    height:200px;
+    margin:50px;
+}
 
 @media screen and (max-width: 940px) {
 
